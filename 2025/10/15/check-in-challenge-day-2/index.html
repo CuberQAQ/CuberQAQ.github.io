@@ -32,17 +32,18 @@ var _hmt = _hmt || [];
   <link rel="preload" href="/css/fonts/Roboto-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
   <link rel="preload" href="/css/fonts/Roboto-Bold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
-  <meta name="description" content="来自 曙光21天打卡挑战 - Day2学习 cf&amp;lc刷题指南 与 贪心算法  感谢丁老师推荐的一篇高质量训练指南。 以往写贪心题只能瞎猜乱写碰运气，遂决定系统学习贪心算法证明，顺便刷点题。 一个问题可以使用贪心算法解决，即逐步局部最优解可以导向全局最优解，需要满足无后效性，即每一步的状态可只由上一步状态导出，而与之前决策的过程无关（与dp是类似的）。 常见证法：  反证法 归纳法  赛">
+  <meta name="description" content="来自 曙光 21 天打卡挑战 - Day2学习 cf&amp;lc 刷题指南 与 贪心算法  感谢丁老师推荐的一篇高质量训练指南。 以往写贪心题只能瞎猜乱写碰运气，遂决定系统学习贪心算法证明，顺便刷点题。 一个问题可以使用贪心算法解决，即逐步局部最优解可以导向全局最优解，需要满足无后效性，即每一步的状态可只由上一步状态导出，而与之前决策的过程无关（与 dp 是类似的）。 常见证法：  反证法 归">
 <meta property="og:type" content="article">
 <meta property="og:title" content="贪心算法 学习笔记1">
 <meta property="og:url" content="http://cuberqaq.github.io/2025/10/15/check-in-challenge-day-2/index.html">
 <meta property="og:site_name" content="CuberQAQのBlog">
-<meta property="og:description" content="来自 曙光21天打卡挑战 - Day2学习 cf&amp;lc刷题指南 与 贪心算法  感谢丁老师推荐的一篇高质量训练指南。 以往写贪心题只能瞎猜乱写碰运气，遂决定系统学习贪心算法证明，顺便刷点题。 一个问题可以使用贪心算法解决，即逐步局部最优解可以导向全局最优解，需要满足无后效性，即每一步的状态可只由上一步状态导出，而与之前决策的过程无关（与dp是类似的）。 常见证法：  反证法 归纳法  赛">
+<meta property="og:description" content="来自 曙光 21 天打卡挑战 - Day2学习 cf&amp;lc 刷题指南 与 贪心算法  感谢丁老师推荐的一篇高质量训练指南。 以往写贪心题只能瞎猜乱写碰运气，遂决定系统学习贪心算法证明，顺便刷点题。 一个问题可以使用贪心算法解决，即逐步局部最优解可以导向全局最优解，需要满足无后效性，即每一步的状态可只由上一步状态导出，而与之前决策的过程无关（与 dp 是类似的）。 常见证法：  反证法 归">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-10-14T16:00:47.000Z">
-<meta property="article:modified_time" content="2025-10-14T16:01:37.181Z">
+<meta property="article:modified_time" content="2025-10-15T16:08:06.521Z">
 <meta property="article:author" content="CuberQAQ">
-<meta property="article:tag" content="ACM|贪心算法">
+<meta property="article:tag" content="ACM">
+<meta property="article:tag" content="贪心算法">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="CuberQAQのBlog" type="application/atom+xml">
@@ -168,7 +169,7 @@ var _hmt = _hmt || [];
   <div class="widget-wrap">
     <div class="widget">
       <h3 class="widget-title">标签</h3>
-      <ul class="widget-tag-list" itemprop="keywords"><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/ACM/" rel="tag">ACM</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/ACM-%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/" rel="tag">ACM|贪心算法</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/Python-FastAPI-%E5%90%8E%E7%AB%AF/" rel="tag">Python, FastAPI, 后端</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/" rel="tag">贪心算法</a></li></ul>
+      <ul class="widget-tag-list" itemprop="keywords"><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/ACM/" rel="tag">ACM</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/FastAPI/" rel="tag">FastAPI</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/%E5%90%8E%E7%AB%AF/" rel="tag">后端</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/" rel="tag">贪心算法</a></li></ul>
     </div>
   </div>
 
@@ -268,17 +269,17 @@ var _hmt = _hmt || [];
           </div>
         </div>
         
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ACM-%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/" rel="tag">ACM|贪心算法</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ACM/" rel="tag">ACM</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/" rel="tag">贪心算法</a></li></ul>
 
       </header>
       <div class="e-content article-entry" itemprop="articleBody">
         
           <blockquote>
-<p>来自 曙光21天打卡挑战 - Day2<br>学习 cf&amp;lc刷题指南 与 贪心算法</p>
+<p>来自 曙光 21 天打卡挑战 - Day2<br>学习 cf&amp;lc 刷题指南 与 贪心算法</p>
 </blockquote>
 <p>感谢丁老师推荐的一篇高质量训练指南。</p>
 <p>以往写贪心题只能瞎猜乱写碰运气，遂决定系统学习贪心算法证明，顺便刷点题。</p>
-<p>一个问题可以使用贪心算法解决，即逐步局部最优解可以导向全局最优解，需要满足无后效性，即每一步的状态可只由上一步状态导出，而与之前决策的过程无关（与dp是类似的）。</p>
+<p>一个问题可以使用贪心算法解决，即逐步局部最优解可以导向全局最优解，需要满足无后效性，即每一步的状态可只由上一步状态导出，而与之前决策的过程无关（与 dp 是类似的）。</p>
 <p>常见证法：</p>
 <ol>
 <li>反证法</li>
